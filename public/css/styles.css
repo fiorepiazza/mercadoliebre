@@ -267,6 +267,14 @@ footer {
     justify-content: flex-start;
 }
 
+.main-register  {
+    background-color: #ebebeb;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+}
+
 .formulario-login  {
     width: 70%;
     margin: 1rem;
@@ -276,10 +284,10 @@ footer {
     display: block;
     margin-bottom: 2rem;
     padding-left: 0.5rem;
-    width: 100%;
+    width: 50%;
     background-color: #fff;
     border-radius: 4px;
-}
+    }
 
 .campo input  {
     width: 100%;
