@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>crear tu propia cuenta</title>
+    <link href="/css/styles.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <section id="header-arriba">
+            <figure id="logo">
+                <a href="/"><img src="/img/images/logo-mercado-liebre.svg"></a>
+            </figure>
+
+
+            <section class="barra-busqueda">
+                <form action="" method="post">
+                    <div class="busqueda">
+                        <input type="search" placeholder="buscar productos,marcas" required>
+                    </div>
+                    <div class="boton-buscar">
+                        <button type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+                    </div>
+                </form>
+            </section>
+
+
+            <section class="p-cuotas">
+                <div><i class="fa-solid fa-hand-holding-dollar"></i></div>
+                <p>Comprá en cuotas y sin tarjeta de crédito</p>
+            </section>
+        </section>
+
+
+
+        <nav class="cuerpos-de-texto"></nav>
+        <ul type="none" class="caja1">
+            <li><a href="#">Ofertas</a></li>
+            <li><a href="#">Tiendas Oficiales</a></li>
+            <li><a href="#">Vender</a></li>
+            <li><a href="#">Ayuda</a></li>
+        </ul>
+        <ul class="caja1">
+            <li><a href="/registrar">Créa tu cuenta </a><i class="far fa-id-card"></i></li>
+            <li><a href="/login">Ingresá </a><i class="fas fa-sign-in-alt"></i> </li>
+            <li><a href="#">Mis compras </a><i class="fas fa-shopping-bag"></i></li>
+        </ul>
+        </nav>
+
+        <div class="burguer-menu">
+            <i class="fa-solid fa-bars"></i>
+        </div>
+        <div>
+            <img src="/img/images/img-home-banner.jpg" class="imagen">
+        </div>
+
+    </header>
+
+
+    <main class="formulario">
+        <div class="main-register">
+            <div class="campo">
+                <h1>Creá tu cuenta</h1>
+                <form action="/registrar" method="post">
+                    <p>
+                        <label for="apellido y nombre">nombre y apellido:</label>
+                        <input type="text" name="apellido y nombre" id="apellido y nombre" class="boton">
+                    </p>
+                    <p>
+                        <label for="usuario">usuario:</label>
+                        <input type="text" name="usuario" id="usuario" class="boton">
+                    </p>
+                    <p>
+                        <label for="fecha de nacimiento">fecha de nacimiento:</label>
+                        <input type="date" name="fecha de nacimiento" id="fecha de nacimiento" class="boton">
+                    </p>
+            </div>
+            <p>
+            <h4>Usted desea:</h4>
+            <br>
+            <
+            <label for="perfil">Comprar</label>
+            <input type="radio" name="perfil" value="comprar">
+            <label for="perfil">Vender</label>
+            <input type="radio" name="perfil" value="vender">
+            </p>
+            <p>
+            <h4>Categorías de interés:</h4>
+            <br>
+            <label for="interes">Electro</label>
+            <input type="checkbox" name="interes" value="interes">
+            <label for="interes">Moda</label>
+            <input type="checkbox" name="interes" value="interes">
+            <label for="interes">Hogar</label>
+            <input type="checkbox" name="interes" value="interes">
+            <label for="interes">Jugeteria</label>
+            <input type="checkbox" name="interes" value="interes">
+            <label for="interes">Vida sana</label>
+            <input type="checkbox" name="interes" value="interes">
+            </p>
+
+            <br>
+            <label for="foto-perfil">Inserte una foto de perfil:</label>
+            <input type="file" name="foto-perfil" accept=".jpg">
+            <br>
+               
+            <div class="campo">
+            <label for="contraseña1">Contraseña:</label>
+            <input type="password" name="contraseña1" minlength="6" maxlength="10" required alt="strongPass"
+                class="boton">
+            <br>
+
+            <label for="contraseña2">Confirmar Contraseña:</label>
+            <input type="password" name="contraseña1" minlength="6" maxlength="10" invalid="contraseña1" class="boton">
+            </div>
+
+            <input type="button" value="Confirmar contraseña">
+            <br>
+            <button type="submit" class="boton-final"> Enviar Datos</button>
+            <br>
+            <button type="reset" class="boton-final"> Borrar Datos</button>
+
+            </form>
+        </div>
+    </main>
+
+</body>
+
+</html>
