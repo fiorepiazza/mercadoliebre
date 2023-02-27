@@ -28,8 +28,9 @@ header {
 #header-arriba {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
-    padding: 2rem;
+    justify-content: space-around;
+    padding: 2rem 0;
+    align-content: center;
 }
 
 #logo {
@@ -46,7 +47,7 @@ header {
 .titulares {
     font-size: 24px;
     width: 100%;
-    margin: 1rem;
+    margin: 1rem 0;
 }
 
 
@@ -86,33 +87,29 @@ header {
     display: inline;
 }
 
-.p-cuotas p {
-    display: inline;
-}
-
-
 .barra-busqueda {
-    width: 40%;
+    width: 45%;
     background-color: white;
     align-self: center;
     display: flex;
-    justify-content: space-between;
+    border-radius: 4px;
 }
 
-.barra-busqueda div {
-    display: inline;
-    background-color: white;
-    width: 20px;
+.barra-busqueda form{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    margin: 0.5rem;
 }
 
 .boton-buscar {
     display: inline;
     background-color: white;
-    width: 20px;
+    justify-self: flex-end;
 }
 
 .imagen {
-    width: 100%;
+    width: 45%;
     height: 300px;
     box-sizing: border-box;
 }
@@ -203,14 +200,18 @@ footer {
     background-color: #FFF;
     border-radius: 50%;
     position: absolute;
-    right: 20px;
+    right: 80px;
     top: -15px;
 }
 
-.icono-envio {
-    margin: 0px;
-    padding: 0px;
-    box-sizing: border-box;
+.producto:hover .detalle i{
+    transform: rotateZ('360deg');
+    right: 20px;
+}
+
+.producto:hover .producto-nombre  {
+    display: block;
+    padding-top: 1rem;
 }
 
 .fa-truck {
@@ -332,6 +333,9 @@ h4 {
     font-size: 13px;
     font-family: "Roboto", sans-serif;
 }
+ input { 
+    display: block;
+ }
 
 /*tablet*/
 
@@ -364,8 +368,8 @@ h4 {
 
     .caja1 {
         display: flex;
-        flex-wrap: wrap;
-        flex-direction: row;
+        width: 40%;
+        text-align: center;
         justify-content: space-around;
     }
 
@@ -392,7 +396,7 @@ h4 {
     }
 
     .producto {
-        width: 23%
+        width: 23%;
     }
 
     .descripciones {
@@ -412,12 +416,7 @@ h4 {
         flex-wrap: wrap;
     }
 
-    .caja1 {
-        display: flex;
-        flex-wrap: wrap;
-        flex-direction: row;
-        justify-content: space-around;
-    }
+    
 
     article {
         margin: 5px;
@@ -444,11 +443,8 @@ h4 {
         width: 30%;
     }
 
-    .cuerpos-de-texto {
-        font-size: 12px;
-        display: flex;
-        justify-content: space-between;
-        padding-bottom: 1.5rem;
+      .campo  {
+        width: 40%;
     }
 }
 

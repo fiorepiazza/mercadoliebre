@@ -12,41 +12,55 @@
 
 <body>
     <header>
-            <div class="caja1">
-            <img class="logo" src="/img/images/logo-mercado-liebre.svg">
-            <br>
-            <input class="barra-navegacion" type="search" placeholder="buscar productos,marcas">
-            <button class="boton-buscar"><i class="fa-sharp fa-solid fa-magnifying-glass"></i></button>
+        <section id="header-arriba">
+        <figure id="logo">
+            <a href="/"><img src="/img/images/logo-mercado-liebre.svg"></a>
+        </figure>
+
+
+        <section class="barra-busqueda">
+            <form action="" method="post">
+                <div class="busqueda">
+                    <input type="search" placeholder="buscar productos,marcas" required>
+                </div>
+                <div class="boton-buscar">
+                    <button type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+                </div>
+            </form>
+        </section>
+
+       
+        <section class="p-cuotas">
+            <div><i class="fa-solid fa-hand-holding-dollar"></i></div>
+            <p>Comprá en cuotas y sin tarjeta de crédito</p>
+        </section>
+        </section>
+        
+
+        
+        <nav class="cuerpos-de-texto"></nav>
+        <ul type="none" class="caja1">
+            <li><a href="#">Ofertas</a></li>
+            <li><a href="#">Tiendas Oficiales</a></li>
+            <li><a href="#">Vender</a></li>
+            <li><a href="#">Ayuda</a></li>
+        </ul>
+        <ul class="caja1">
+            <li><a href="/registrar">Créa tu cuenta </a><i class="far fa-id-card"></i></li>
+            <li><a href="/login">Ingresá </a><i class="fas fa-sign-in-alt"></i> </li>
+            <li><a href="#">Mis compras </a><i class="fas fa-shopping-bag"></i></li>
+        </ul>
+        </nav>
+       
+        <div class="burguer-menu">
+            <i class="fa-solid fa-bars"></i>
         </div>
-        <br>
-        <p class="p-cuotas"><i class="fa-solid fa-hand-holding-dollar"></i>Comprá en cuotas y sin tarjeta de crédito
-        </p>
-        <br>
-    </div>
-    </div>
+        <div>
+            <img src="/img/images/img-home-banner.jpg" class="banner">
+        </div>
+    </header>
 
-    <nav class="cuerpos-de-texto"></nav>
-    <ul type="none" class="caja1">
-        <li><a href="#">Ofertas</a></li>
-        <li><a href="#">Tiendas Oficiales</a></li>
-        <li><a href="#">Vender</a></li>
-        <li><a href="#">Ayuda</a></li>
-        <br>
-        <li><a href="#">Créa tu cuenta</a><i class="fa-solid fa-id-card"></i></li>
-        <li><a href="#">Ingresá</a><i class="fa-solid fa-arrow-right-to-bracket"></i> </li>
-        <li><a href="#">Mis compras</a><i class="fa-solid fa-bag-shopping"></i></li>
-    </ul>
-    <div class="burguer-menu">
-        <i class="fa-solid fa-bars"></i>
 
-    </div>
-    </nav>
-
-</header>
-
-<div>
-    <img src="/img/images/img-home-banner.jpg" class="imagen">
-</div>
 
 <main>
     <div class="main-login">
